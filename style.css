@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+} 
+.calculator
+{
+    position: relative;
+    display: grid;
+}
+
+.calculator .value
+ {
+     color: white;
+    grid-column: span 4;
+    height: 80px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgba(0,0,0.1);
+    border-radius: 17px;
+    background:  linear-gradient(225deg, #08171e, #0a1b23);
+    box-shadow:  -10px 10px 21px #08151c, 
+                 10px -10px 21px #0a1d26;
+    
+}
+.calculator span
+{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: #0c2835;
+    place-items: center;
+    border: 1px solid rgba(0,0,0.1);
+}
+.calculator span:active
+{
+    background: #74ff3b;
+    color: #111;
+    
+}
+.calculator span.clear
+{
+    grid-column: span 2;
+    width: 120px;
+    border-radius: 17px;
+    background: linear-gradient(225deg, #e62b6b, #ff337f);
+    box-shadow:  -10px 10px 21px #d92965, 
+             10px -10px 21px #ff3789;
+}
+.calculator span.plus
+{
+    grid-row: span 2;
+    height: 120px;
+}
+.calculator span.equal
+{
+    background: #03b1ff;
+}
+.calculator span.num
+{
+    border-radius: 17px;
+    background:  linear-gradient(225deg, #08171e, #0a1b23);
+    box-shadow:  -10px 10px 21px #08151c, 
+                 10px -10px 21px #0a1d26;
+}
